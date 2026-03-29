@@ -1,0 +1,22 @@
+{
+	"name": "js-practise",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"docker:up": "docker compose up",
+		"start": "bun run docker:up & bun run index.ts",
+		"test": "clear & bun test --concurrent"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.9",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"date-fns": "^4.1.0",
+		"zod": "^4.3.6"
+	}
+}

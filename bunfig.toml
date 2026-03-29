@@ -1,0 +1,5 @@
+[test]
+root = "__tests__"  # Only scan for tests in the __tests__ directory
+timeout = 10000  # 10 seconds (default is 5000ms)
+retry = 3
+invalidOption = true  # This will generate a warning
