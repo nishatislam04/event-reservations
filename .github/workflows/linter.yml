@@ -1,0 +1,22 @@
+name: code quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: install biome
+        run: npm install -g @biomejs/biome # we might need to change it, when this lives in github for better management
+
+      - name: run biome
+        run: biome ci .
