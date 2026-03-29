@@ -12,7 +12,7 @@ describe("user tests", () => {
 				username: "firstOrganizer",
 				email: "firstemail@gmail.com",
 				type: "organizer",
-				wallete: 19099,
+				wallet: 19099,
 			});
 
 			// check returned object
@@ -30,7 +30,7 @@ describe("user tests", () => {
 			expect(user.email).toBe("firstemail@gmail.com");
 			expect(user.type).toBe("organizer");
 			expect(user.status).toBe("inactive");
-			expect(user.wallete).toBe(19099);
+			expect(user.wallet).toBe(19099);
 		});
 
 		// i feel like we need to have a test here for the error state
