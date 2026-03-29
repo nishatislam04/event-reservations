@@ -16,7 +16,7 @@ jobs:
           persist-credentials: false
 
       - name: install biome
-        run: npm install -g @biomejs/biome # we might need to change it, when this lives in github for better management
+        uses: biomejs/setup-biome@v2
 
       - name: run biome
         run: biome ci .
