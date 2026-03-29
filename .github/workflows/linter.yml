@@ -15,8 +15,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: install biome
+      - name: setup biome
         uses: biomejs/setup-biome@v2
+        with:
+          version: "2.4.9"
 
       - name: run biome
         run: biome ci .
