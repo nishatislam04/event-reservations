@@ -7,8 +7,6 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-22.04
-    container:
-      image: node:20-bullseye-slim
     steps:
       - name: checkout
         uses: actions/checkout@v5
