@@ -1,2 +1,6 @@
-node_modules
-bun.lockb
+# Minimal biome ignore file
+node_modules/
+.git/
+dist/
+build/
+*.log
